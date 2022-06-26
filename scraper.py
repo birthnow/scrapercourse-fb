@@ -20,5 +20,11 @@ email.send_keys(credentials.email)
 password.send_keys(credentials.pass)
 password.submit()
 
-time.sleep(15)
+time.sleep(5)
+
+driver.get("http://www.facebook.com/ETtodayMOVIE")
+
+for i in range(10):
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+    time.sleep(4)
 
